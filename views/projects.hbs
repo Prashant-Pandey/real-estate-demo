@@ -1,0 +1,93 @@
+</section>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.css">
+<section>
+    <div class="container product-display width-sm-90-percent">
+        <div class="row project-row">
+            <div class="col-lg-6 landing-img">
+                <div class="product-img" style="background-image: url('images/house-img.jpg')">
+                </div>
+                <div class="product-some-info flex justify-space-between-flex">
+                    <div class="prod-price flex flex-no-wrap direction-column-flex justify-content-end-flex">
+                        <b>Rs 5000</b>
+                        <span>per Yard</span>
+                    </div>
+                    <div class="prod-location flex flex-no-wrap direction-column-flex justify-content-end-flex">
+                        <span class="fa fa-location-arrow"></span>
+                        <p class="location-name">Rosewoods Farm,<br>Hyderabad</p>
+                    </div>
+                    <div class="prod-enquire-form flex flex-no-wrap direction-column-flex justify-content-end-flex">
+                        <span class="fa fa-send-o"></span>
+                        <p>Direct<br>Enquire</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-lg-6 col-sm-9 flex direction-column-flex justify-space-evenly-flex  margin-left-sm-1-percent">
+                <h2>Rosewoods Farm Hyderabad</h2>
+                <p class="text-align-justify border-bottom-theme padding-bottom-10px">With ticket sizes getting larger by the day, the
+                    common investor is
+                    increasingly getting crowded out of the commercial property market. Lower investible funds also
+                    means gravitating towards under construction
+                    and
+                    early
+                    stage projects where payments are spread-out over time. This in turn leads to the common risks of
+                    real
+                    estate
+                    investing - rogue developers, unending construction delays, lack of proper approvals and a clear
+                    title.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        image here
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <div class="row">
+                            <canvas id="price_history_chart_{{title}}" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-12 contact-btns flex justify-align-content-item-end-flex">
+                <a href="#" class="contact-us-btn theme-btn">Contact Us!</a>
+                <a href="#" class="book-now-btn theme-btn">Book Now!</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    {{!-- {{#contentFor "pageScripts"}} --}}
+    <script>
+        // Disable automatic style injection
+        Chart.platform.disableCSSInjection = true;
+        var ctx = document.getElementById('price_history_chart_{{title}}');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['', '', '', '', '', ''],
+                datasets: [{
+                    label: 'History of Price in Area',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        '#91C95D',
+                        '#91C95D',
+                        '#91C95D',
+                        '#91C95D',
+                        '#91C95D',
+                        '#91C95D'
+                    ]
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        console.log("{{title}}");
+    </script>
+    {{!-- {{/contentFor}} --}}
