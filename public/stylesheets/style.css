@@ -2019,6 +2019,10 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
         height: 300px;
     }
 
+    .height100vh{
+        height: 50vh
+    }
+
 
     .product-some-info .prod-location {
         font-size: 12px;
@@ -2028,6 +2032,12 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     .padding-top-why-us {
         padding-top: 40px;
     }
+
+
+.third-whyus{
+    margin-bottom: 70px;
+}
+
 
 }
 
@@ -2251,7 +2261,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .why-us-trading-container img {
-    max-height: 190px;
+    max-height: 160px;
+    width: 90%;
 }
 
 .height-90-percent {
@@ -2259,8 +2270,13 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .exit-img-height {
-    height: 45vh;
-    margin-top: -100px;
+    margin-top: -150px;
+    z-index: 10;
+}
+
+.exit-img-height img{
+    width: 100%;
+    height: 200px;
 }
 
 .product-img {
@@ -2339,6 +2355,11 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     }
 }
 
+body, .wrapper, .main{
+    overflow-x: hidden; 
+}
+
+
 @media (max-width: 582px) {
     .width-sm-90-percent {
         width: 80vw;
@@ -2349,14 +2370,13 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     }
 
     body, .wrapper, .main{
-        overflow: scroll; 
+        overflow-x: scroll; 
     }
 
     .margin-right-fixed {
         margin-right: 0;
     }
 
-   
 }
 
 /* swiper custom css */
@@ -2387,3 +2407,16 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     -webkit-align-items: center;
     align-items: center;
 }
+
+
+/* ftpid: developer@proptrading.in */
+/* password: ~N1p$?q+G&?5 */
+
+
+/* ssh: 148.66.136.124
+cpanel: xlst7png6seh
+password: RoomTemp@123
+
+godaddy: 
+uname: tanayshriv
+password: Tanay@123 */
