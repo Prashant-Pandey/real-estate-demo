@@ -7318,8 +7318,8 @@
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#7A481D" d="M76.938,108.404c-0.214-0.013-0.427-0.025-0.641-0.038
 		c0.556-0.42,1.104-0.582,1.623,0.057C77.592,108.417,77.265,108.41,76.938,108.404z"/>
 </g>
-<text transform="matrix(1 0 0 1 283.8135 19.3022)" fill="#4E4E4E" font-family="'OpenSans-Light'" font-size="12">Hold it till Lock in period</text>
+<text transform="matrix(1 0 0 1 283.8135 19.3022)" fill="#4E4E4E" font-family="'OpenSans-Light'" font-size="16">Hold it till Lock in period</text>
 <circle fill="none" stroke="#333333" stroke-miterlimit="10" cx="257.379" cy="63.658" r="14.75"/>
 <polyline fill="none" stroke="#333333" stroke-miterlimit="10" points="269.629,51.908 293.629,28.908 444.629,28.908 "/>
-<text transform="matrix(1 0 0 1 250.7246 36.8706)" fill="#84BE43" font-family="'OpenSans-Light'" font-size="20">01</text>
+<text transform="matrix(1 0 0 1 250.7246 36.8706)" fill="#84BE43" font-family="'OpenSans-Light'" font-size="25">01</text>
 </svg>

@@ -56,6 +56,9 @@ router.post('/subscribe', function (req, res, next) {
       res.redirect('/?valid=true');
     }
   });
+  connection.on('error', function(err) {
+    console.log("[mysql error]",err);
+  });
   connection.end();
 });
 
@@ -73,7 +76,6 @@ router.post('/auth', function (req, res, next) {
   connection.query('USE ' + dbconfig.database);
   // save the data in db
   // if save is done then redirect to index
-  if (req.body.length > 0) {
     let sql = "";
     if (req.body.login) {
       // login form is submitted
@@ -93,9 +95,9 @@ router.post('/auth', function (req, res, next) {
         res.redirect('/?valid=true');
       }
     });
-  }else {
-    res.redirect('/login?valid=false');
-  }
+    connection.on('error', function(err) {
+      console.log("[mysql error]",err);
+    });
   connection.end();
 });
 

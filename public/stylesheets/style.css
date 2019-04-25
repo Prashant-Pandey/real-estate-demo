@@ -1,5 +1,15 @@
 /* space for plugins */
 
+@font-face {
+    font-family: 'OpenSans-Light';
+    src:  url('/stylesheets/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src:  url('/stylesheets/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
 /* bootstrap styles */
 
 .container {
@@ -1968,8 +1978,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -2036,6 +2046,18 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 
 .third-whyus{
     margin-bottom: 70px;
+}
+
+.landing-page-heading{
+    font-size: 32px;
+}
+
+.why-us-02-container{
+    margin-top: 10%;
+}
+
+.why-us-04-container{
+    margin-top: 35%;
 }
 
 
@@ -2261,8 +2283,12 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .why-us-trading-container img {
-    max-height: 160px;
+    /* max-height: 160px; */
     width: 90%;
+}
+
+.why-us-trading-container{
+    flex-grow: 3;
 }
 
 .height-90-percent {
@@ -2274,9 +2300,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     z-index: 10;
 }
 
-.exit-img-height img{
-    width: 100%;
-    height: 200px;
+.exit-img-height svg{
+    width: 125%;
 }
 
 .product-img {
@@ -2290,6 +2315,12 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 .padding-bottom-10px {
     padding-bottom: 10px;
 }
+
+.justify-end-flex{
+    margin-bottom: -200px;
+}
+
+
 
 @media (max-width: 992px) {
     * {
@@ -2407,6 +2438,17 @@ body, .wrapper, .main{
     -webkit-align-items: center;
     align-items: center;
 }
+
+.landing-img img{
+    width: 80%;
+    margin-left: 10%
+}
+
+.subscription-panel{
+    margin-left: 10%;
+}
+
+
 
 
 /* ftpid: developer@proptrading.in */
