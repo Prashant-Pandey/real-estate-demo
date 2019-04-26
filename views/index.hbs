@@ -10,7 +10,13 @@
 
     /* The Modal (background) */
     .modal {
-        display: {{visible}};
+        display: {
+                {
+                visible
+            }
+        }
+
+        ;
         /* Hidden by default */
         position: fixed;
         /* Stay in place */
@@ -86,12 +92,13 @@
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 flex direction-column-flex justify-space-evenly-flex">
             <div class="flex direction-column-flex  justify-center-flex">
                 <br>
-				<h2 class="landing-page-heading" style="font-weight:100;">Invest and get <span class="theme-color-text">15-25%</span> guaranteed
+                <h2 class="landing-page-heading" style="font-weight:100;">Invest and get <span
+                        class="theme-color-text">15-25%</span> guaranteed
                     <br> return in <span class="theme-color-text">6-8 Months</span> in Real Estate.
                 </h2>
 
                 <br>
-				<div class="stats-container justify-center-flex flex ">
+                <div class="stats-container justify-center-flex flex ">
                     <img src="images/equitylogo.png" alt="more than">
                     <span>30+<br>Investor</span>&nbsp;&nbsp;&nbsp;
                     <img src="images/tradelogo.png" alt="more than">
@@ -99,12 +106,12 @@
                 </div>
 
             </div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-	
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
 
             <div class="subscribe flex justify-space-between-flex align-items-center-flex subscription-panel">
                 <form action="/subscribe" class="flex" method="post">
@@ -116,28 +123,28 @@
         </div>
     </div>
     <br>
-	<hr class="alert-success">
+    <hr class="alert-success">
 
 
     <!-- How it works Block -->
-	<div class="container">
+    <div class="container">
         <div class="row height-100-percent">
-			                <h2 style="text-align:left;">How it works ?</h2>
-{{!-- 
+            <h2 style="text-align:left;">How it works ?</h2>
+            {{!-- 
             <div class="how-it-works-container col-sm-12 col-md-5 col-lg-5 col-xl-5 flex direction-column-flex justify-center-flex text-align-justify">
 
                
             </div> --}}
 
-			        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5  landing-img">
-						<img src="images/howitworks.svg" alt="simple working">
-					</div>
-			
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5  landing-img">
+                <img src="images/howitworks.svg" alt="simple working">
+            </div>
+
             <div
                 class="working-illustrator col-sx-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 flex direction-column-flex justify-space-between-flex">
                 <div class="padding-horizontal">
-                    
-					<img src="images/sv2_how_it_works.svg" alt="simple working">
+
+                    <img src="images/sv2_how_it_works.svg" alt="simple working">
 
                 </div>
                 <div class="flex justify-align-content-item-end-flex">
@@ -153,67 +160,57 @@
         </div>
     </div>
 
-	<hr class="alert-success">
+    <hr class="alert-success">
 
     <!-- Why PropTrading Block-->
-	<div class="container height-100-percent width-sm-90-percent flex direction-column-flex justify-space-between-flex">
-        <div class="row why-us-trading-container">
+    <div class="container height-100-percent width-sm-90-percent flex direction-column-flex justify-space-between-flex"
+        style="height: 100vh">
+        <div class="row height-100-percent flex direction-column-flex justify-space-between-flex">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h2 style="text-align:left;">Why PropTrading ?</h2>
+                </div>
+            </div>
+            <div class="row" style="flex-grow: 4;">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-align-content-item-end-flex">
+                    <img src="images/svg_y_1.svg" alt="simple working">
+                </div>
 
-            <h2 style="text-align:left;">Why PropTrading ?</h2>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-center-flex">
+                    <img src="images/svg_y_2.svg" alt="simple working">
 
-			<div class="col-md-4"></div>
+                </div>
 
-
-			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-space-between-flex ustify-center-flex" style="margin-top: 60px;">
-                <div class="why-prop-trading-content text-align-justify">
-					<img src="images/svg_y_2.svg" alt="simple working">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-space-between-flex">
+                     <img src="images/svg_y_3.svg" alt="simple working">
+                    <img src="images/svg_y_4.svg" alt="simple working">
                 </div>
 
             </div>
-
-			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-space-between-flex ustify-center-flex">
-                <div class="why-prop-trading-content text-align-justify">
-					<img src="images/svg_y_3.svg" alt="simple working">
-                </div>
-
-            </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 why-prop-trading flex direction-column-flex justify-space-between-flex ustify-center-flex">
-                <div class="why-prop-trading-content text-align-justify">
-					<img src="images/svg_y_1.svg" alt="simple working">
-                </div>
-
-            </div>
-
-			<div class="col-md-4"></div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <div class="row">
-
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 flex justify-center-flex align-content-center-flex align-items-center-flex why-us-03-container">
-						<img src="images/svg_y_4.svg" alt="simple working">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="flex justify-align-content-item-end-flex">
+                        <div
+                            class="to-the-faq flex flex-no-wrap align-items-center-flex justify-center-flex align-content-center-flex">
+                            <p>Still got Question. We’ve probably covered them<br>
+                                all in the Help Center .</p>
+                            <a href="#"
+                                class="circle-faq-btn flex align-content-center-flex justify-center-flex align-items-center-flex signup-btn">></a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
-		<div class="flex justify-align-content-item-end-flex">
-			<div class="to-the-faq flex flex-no-wrap align-items-center-flex justify-center-flex align-content-center-flex">
-				<p>Still got Question. We’ve probably covered them<br>
-					all in the Help Center .</p>
-				<a href="#"
-					class="circle-faq-btn flex align-content-center-flex justify-center-flex align-items-center-flex signup-btn">></a>
-			</div>
-		</div>
-
     </div>
 
 
-	<hr class="alert-success">
+    <hr class="alert-success">
 
     <!-- Exit Strategy Block-->
-	<div class="container height-100-percent width-sm-90-percent flex direction-column-flex justify-space-between-flex">
+    <div class="container height-100-percent width-sm-90-percent flex direction-column-flex justify-space-between-flex">
         <div class="row exit-strategy">
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class=" text-align-justify">
@@ -238,16 +235,16 @@
                         <img src="images/svg_e_3.svg" alt="simple working">
                     </div>
                 </div>
-			</div>
+            </div>
         </div>
     </div>
 
-	<br>
-	<br>
-	<hr class="alert-success">
+    <br>
+    <br>
+    <hr class="alert-success">
 
     <!-- Rosewoods Farm Block -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.css">
 
     <div class="container product-display width-sm-90-percent">
         <div class="row project-row">
@@ -273,12 +270,16 @@
                 class="col-lg-6 col-sm-9 flex direction-column-flex justify-space-evenly-flex  margin-left-sm-1-percent">
                 <h2>Rosewoods Farm Hyderabad</h2>
                 <p class="text-align-justify border-bottom-theme padding-bottom-10px">
-                    Rosewood Farms is a grand residential land gated community venture spread across 50 acres of land beautifully developed with aesthetic landscaping and Plantation with open area for greenery. Equipped with all amenities like park with water body like lake and jogging track with greenaries all around and Clubhouse & Cricket Ground. This venture was started in 2018 and drew amazing response from the buyers.
+                    Rosewood Farms is a grand residential land gated community venture spread across 50 acres of land
+                    beautifully developed with aesthetic landscaping and Plantation with open area for greenery.
+                    Equipped with all amenities like park with water body like lake and jogging track with greenaries
+                    all around and Clubhouse & Cricket Ground. This venture was started in 2018 and drew amazing
+                    response from the buyers.
                 </p>
                 <style>
-                    #Layer_1{
+                    #Layer_1 {
                         width: 100%;
-                      /*  margin-right: 10px; */
+                        /*  margin-right: 10px; */
                     }
                 </style>
 
@@ -289,8 +290,8 @@
                         <!DOCTYPE svg
                             PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 306 342.197" enable-background="new 0 0 306 342.197" xml:space="preserve">
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 342.197"
+                            enable-background="new 0 0 306 342.197" xml:space="preserve">
                             <text transform="matrix(1 0 0 1 57.0649 74.5225)" fill="#4E4E4E"
                                 font-family="'OpenSans-Light'" font-size="18">Plot / Land</text>
                             <path fill="#86BC65" d="M233.141,129.243c-1.202-1.783-2.739-3.153-3.975-4.253c-1.107-0.987-2.083-1.856-2.329-2.608
@@ -495,83 +496,83 @@
     </div>
 
 
-	<hr class="alert-success">
+    <hr class="alert-success">
     <!-- Investor Testimonials Block -->
-	<div class="container-fluid height-100-percent width-sm-90-percent testimonials">
-		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 width-sm-90-percent">
-				<h2>
-					Investor Testimonials
-				</h2>
-				<p class="text-align-justify">
-					Started with a team of 4 passionate young minds, CodeLabs is now a family
-					of 200 developers and designers. All these years, we have followed the
-					vision to deliver amazing user experiences through technology to our clients
-					worldwide.
-				</p>
+    <div class="container-fluid height-100-percent width-sm-90-percent testimonials">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 width-sm-90-percent">
+                <h2>
+                    Investor Testimonials
+                </h2>
+                <p class="text-align-justify">
+                    Started with a team of 4 passionate young minds, CodeLabs is now a family
+                    of 200 developers and designers. All these years, we have followed the
+                    vision to deliver amazing user experiences through technology to our clients
+                    worldwide.
+                </p>
 
                 <div class="flex">
                     <img src="images/investor-testimonials.svg" style="height: 250px" alt="investor testimonials">
                 </div>
-                
+
             </div>
-		{{!-- </div>
+            {{!-- </div>
 		<div class="row">
 			<div class="testimonial-container col-sm-6 col-md-6 col-lg-6 col-xl-6">
 				<div class="flex">
 					<img src="images/investor-testimonials.svg" style="height: 250px" alt="investor testimonials">
 				</div>
 			</div> --}}
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  width-sm-90-percent testimonials flex">
-				<div class="carousel flex direction-column-flex">
-					<!-- Swiper -->
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<iframe style="height: 100%; width: 100%;"
-									src="https://www.youtube.com/embed/N20XICM5pIM" frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
-							</div>
-							<div class="swiper-slide">
-								<iframe style="height: 100%; width: 100%;"
-									src="https://www.youtube.com/embed/N20XICM5pIM" frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
-							</div>
-						</div>
-						<!-- Add Pagination -->
-						<div class="swiper-pagination"></div>
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-				</div>
-			</div>
-            
-		</div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  width-sm-90-percent testimonials flex">
+                <div class="carousel flex direction-column-flex">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe style="height: 100%; width: 100%;"
+                                    src="https://www.youtube.com/embed/N20XICM5pIM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe style="height: 100%; width: 100%;"
+                                    src="https://www.youtube.com/embed/N20XICM5pIM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <br>
         <br>
-	    <hr class="alert-success">
+        <hr class="alert-success">
 
         <div class="row">
 
-			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<div class="flex justify-center-flex align-items-center-flex" style="font-size: 10px; margin-top: 18px">
-					<p>
-						Investment in real estate involves a degree of risk and investors should not invest any
-						funds unless
-						they
-						can afford to take the risk of losing their investment. <br class="hide-sm">
-						For taking an investment decision, investors must rely on their own examination of the
-						property
-						including
-						the risks involved.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="flex justify-center-flex align-items-center-flex" style="font-size: 10px; margin-top: 18px">
+                    <p>
+                        Investment in real estate involves a degree of risk and investors should not invest any
+                        funds unless
+                        they
+                        can afford to take the risk of losing their investment. <br class="hide-sm">
+                        For taking an investment decision, investors must rely on their own examination of the
+                        property
+                        including
+                        the risks involved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
@@ -616,37 +617,37 @@
 
 
 
-        {{!-- <script type="text/javascript" src="javascripts/jquery.onepage-scroll.min.js"></script> --}}
-        <script>
-            /** $(document).ready(function () {
-        
-                $(".main").onepage_scroll({
-                    sectionContainer: "section",
-                    responsiveFallback: 600,
-                    loop: true
-                });
-            }); */
+{{!-- <script type="text/javascript" src="javascripts/jquery.onepage-scroll.min.js"></script> --}}
+<script>
+    /** $(document).ready(function () {
+ 
+        $(".main").onepage_scroll({
+            sectionContainer: "section",
+            responsiveFallback: 600,
+            loop: true
+        });
+    }); */
 
-            // Get the modal
-            var modal = document.getElementById('thanksModal');
+    // Get the modal
+    var modal = document.getElementById('thanksModal');
 
-            // Get the button that opens the modal
-            // var btn = document.getElementById("myBtn");
+    // Get the button that opens the modal
+    // var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-            console.log("{{visible}}")
+    console.log("{{visible}}")
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

@@ -2524,6 +2524,10 @@ body, .wrapper, .main{
     margin: auto;
 }
 
+.why-prop-trading img{
+    width: 100%;
+}
+
 
 /* 
 @media (min-width: 376px) {
