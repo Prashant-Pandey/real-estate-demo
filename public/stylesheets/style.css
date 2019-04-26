@@ -1564,7 +1564,7 @@ h1 span {
 
 h2 {
     color: #6D461D;
-    font-weight: 100;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -2299,6 +2299,15 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     margin-right: 6px;
 }
 
+.text-select-theme {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px var(--main-theme-text-color) solid;
+    margin-right: 6px;
+    margin-top: 35px;
+}
+
 #contact-input+button {
     background-color: var(--main-theme-sp-color);
     -moz-border-radius: 5px;
@@ -2516,14 +2525,14 @@ body, .wrapper, .main{
 }
 
 
-
+/* 
 @media (min-width: 376px) {
 
     .exit-img-height {
         margin-top: 0px;
         z-index: 10;
     }
-}
+} */
 
 
 /* ftpid: developer@proptrading.in */

@@ -69,12 +69,25 @@
                 <img src="images/signup.svg" alt="login">
                 <form action="/auth" class="form-style flex flex-no-wrap justify-center-flex direction-column-flex"
                     method="post">
+                    <input type="text" name="name" class="text-input-theme" placeholder="Name" />
                     <input type="email" name="email" class="text-input-theme" placeholder="Email address" />
-                    <input type="password" name="password" class="text-input-theme" placeholder="Password address">
-                    <input type="tel" name="tel" class="text-input-theme" placeholder="Phone">
-                    <input type="number" name="investment" class="text-input-theme" placeholder="Investment upto">
-                    <input type="text" name="comments" class="text-input-theme"
-                        placeholder="What is your project is about">
+                    <input type="password" name="password" class="text-input-theme" placeholder="Password">
+                    <input type="tel" name="tel" class="text-select-theme" placeholder="Phone">
+
+                    {{!-- <input type="number" name="investment" class="text-input-theme" placeholder="Investment upto"> --}}
+
+                    <select name="investment" class="text-select-theme">
+                      <option value="10">10 Lacs</option>
+                      <option value="10-30">10 - 30 Lacs</option>
+                      <option value="30-50">30 - 50 Lacs</option>
+                      <option value="50-80">50 - 80 Lacs</option>
+                      <option value="80-100">80 - 1 Cr</option>
+                      <option value="1Cr-3Cr">1 Cr - 3 Cr</option>
+                      <option value="3Cr+">3 Cr and above</option>
+                    </select>
+
+                    {{!-- <input type="text" name="comments" class="text-input-theme"
+                        placeholder="What is your project is about"> --}}
                     <button type="submit" class="theme-btn">Register</button></form>
 
             </div>

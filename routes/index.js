@@ -29,6 +29,10 @@ router.get('/projects', function (req, res, next) {
   res.render('projects', { title: 'PropTrading' });
 });
 
+router.get('/contact', function (req, res, next) {
+  res.render('contact', { title: 'PropTrading' });
+});
+
 router.get('/login', function (req, res, next) {
   let vis = req.query.valid || req.query.valid != undefined ? 'solid' : 'none';
   // let vis = req.query.valid;
