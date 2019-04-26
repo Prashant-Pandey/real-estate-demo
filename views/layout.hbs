@@ -11,11 +11,13 @@
   <meta content="http://www.proptrading.com/" property="og:url" />
   <meta First Available Appointment Is Wednesday April 24, 2019. content="http://www.proptrading.com/"
     property="og:image" />
-  <link First Available Appointment Is Wednesday April 24, 2019. rel="shortcut icon" id="favicon" href="favicon.png">
+  <link First Available Appointment Is Wednesday April 24, 2019. rel="shortcut icon" id="favicon" href="https://www.premierdevelopers.co.in/images/icon.png">
   <meta name="author" content="Prashant Pandey">
   <link rel="canonical" href="http://www.proptrading.com/" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,7 +28,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper container-fluid">
     <div class="main">
 
       <section>
@@ -41,17 +43,20 @@
                 <a href="http://facebook.com"><span class="fa fa-linkedin-square"></span></a>
                 <a href="http://facebook.com"><span class="fa fa-instagram"></span></a>
               </div>
-              <div class="login-signup-btn">
+              <div class="login-signup-btn pull-right">
                <a href="/login" class="login-btn">Login</a>
                 <a href="/signup" class="signup-btn">Register</a>
               </div>
             </div>
-            <div class="nav-navbar flex justify-space-between-flex">
+            <div class="flex justify-space-between-flex">
               <div class="logos flex align-items-center-flex">
-                <a href="/"><img src="images/proptradinglogo.png" alt="proptrading.in"></a> | <a href="/"><img src="images/premierlogo.png" alt="premier enterprises"></a>
+                <a href="/"><img src="images/proptradinglogo1.png" alt="proptrading.in"></a>
+                 {{!-- | <a href="/"><img src="images/premierlogo.png" alt="premier enterprises"></a> --}}
               </div>
-              <div class="navbar-page-links">
+              <div class="navbar-light navbar-page-links pull-right">
+                
                 <ul class="flex">
+                  <li><a href="/">Home</a></li>
                   <li><a href="/projects">Projects</a></li>
                   <li><a href="/about">About Us</a></li>
                   <li><a href="/working">How it Works</a></li>
@@ -62,7 +67,6 @@
         </div>
         {{{body}}}
 
-        <section>
         <div class="row footer">
           <div class="footer-left-txt col-sm-6 col-md-6 col-lg-6 col-xl-6 flex flex">
             <a href="#">© Copyright 2019</a>
@@ -82,7 +86,66 @@
     </section>
   </div>
   </div>
+  
+  <script src="javascripts/bootstrap.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <style>
+  #myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+  #myLogo {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 150px;
+}
+</style>
+  {{!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> --}}
+  <img id="myBtn" style="height: auto; margin-right: 0px;" class="hide-md" src="images/bot.png" alt="">
+  <img id="myLogo" style="height: auto; margin-left: 0px;" class="hide-md" src="images/premierlogo.png" alt="">
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 
 </html>

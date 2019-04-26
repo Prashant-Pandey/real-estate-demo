@@ -20,15 +20,69 @@
     margin-left: auto;
 }
 
+@media (min-width: 376px) {
+    .container {
+        max-width: 540px;
+    }
+    .navbar-page-links ul{
+        margin-left:0;
+        margin-right:0;
+        flex-wrap: nowrap;
+        padding-left: 0px;
+    }
+
+    .landing-page-heading{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-center{
+        text-align: center;
+    }
+
+    .exit-img-height {
+        margin-top: 0px;
+        z-index: 10;
+    }
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+    .navbar-page-links ul{
+        margin-left:0;
+        margin-right:0;
+        flex-wrap: nowrap;
+        padding-left: 0px;
+    }
+
+    .landing-page-heading{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .exit-img-height {
+        margin-top: 0px;
+        z-index: 10;
     }
 }
 
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+    .navbar-page-links ul{
+        margin-left:0;
+        margin-right:0;
+        flex-wrap: nowrap;
+        padding-left: 0px;
+    }
+    .landing-page-heading{
+        font-size: 25px;
+        text-align: left;
+        float: left;
     }
 }
 
@@ -1885,7 +1939,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .navbar {
-    padding: 18px 32px 0 32px;
+    padding: 18px 16px 0 32px;
+    width: 100%;
 }
 
 .navbar-inner {
@@ -1906,9 +1961,9 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .signup-btn {
-    -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
     background-color: var(--main-theme-sp-color);
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
@@ -1962,12 +2017,14 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 
 .navbar-page-links ul {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .navbar-page-links ul li {
-    padding-right: 28px;
+    padding-right: 12px;
     font-size: 12px;
     list-style: none;
+    
 }
 
 .navbar-page-links ul li a {
@@ -1984,7 +2041,7 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .logos img {
-    height: 75px;
+    height: 125px;
 }
 
 .border-bottom-theme {
@@ -2024,7 +2081,19 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 
+
+
 @media (min-width: 992px) {
+    .landing-page-heading{
+        font-size: 35px;
+        text-align: left;
+        float: left;
+    }
+
+    .text-left{
+        text-align: left;
+    }
+
     .product-some-info {
         height: 300px;
     }
@@ -2046,10 +2115,6 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 
 .third-whyus{
     margin-bottom: 70px;
-}
-
-.landing-page-heading{
-    font-size: 32px;
 }
 
 .why-us-02-container{
@@ -2203,11 +2268,11 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     width: 50px;
     background-color: var(--main-theme-sp-color);
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 25px;
     font-size: 36px;
-    -webkit-box-shadow: 12px 5px 29px 0px rgba(0, 0, 0, 0.61);
-    -moz-box-shadow: 12px 5px 29px 0px rgba(0, 0, 0, 0.61);
-    box-shadow: 12px 5px 29px 0px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .to-the-faq {
@@ -2283,8 +2348,8 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
 }
 
 .why-us-trading-container img {
-    /* max-height: 160px; */
-    width: 90%;
+    /* max-height: 260px; */
+    width: 100%;
 }
 
 .why-us-trading-container{
@@ -2446,9 +2511,19 @@ body, .wrapper, .main{
 
 .subscription-panel{
     margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
 }
 
 
+
+@media (min-width: 376px) {
+
+    .exit-img-height {
+        margin-top: 0px;
+        z-index: 10;
+    }
+}
 
 
 /* ftpid: developer@proptrading.in */
